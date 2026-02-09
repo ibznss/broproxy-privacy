@@ -31,33 +31,6 @@
 </head>
 <body>
     <div class="container">
-        <section>
-            <h1>Политика конфиденциальности (BroProxy)</h1>
-            <p class="date">Последнее обновление: 08.02.2026</p>
-            
-            <p>Мы НЕ собираем, не храним и не передаем персональные данные пользователей. Расширение работает полностью автономно.</p>
-
-            <h2>Что используется и зачем:</h2>
-            <ul>
-                <li><code>chrome.storage.local</code> — исключительно для локального хранения ваших списков прокси и настроек на вашем устройстве. Данные не синхронизируются и не покидают ваш браузер.</li>
-                <li><code>proxy API</code> — используется для настройки правил маршрутизации трафика через указанные вами прокси-серверы.</li>
-                <li><code>webRequest / webRequestAuthProvider</code> — используется исключительно для реализации функции фоновой авторизации (передачи логина и пароля прокси-серверу). Расширение не анализирует и не сохраняет содержимое посещаемых вами сайтов.</li>
-                <li><code>api.ipify.org</code> — используется только в момент открытия окна расширения для отображения вашего текущего IP-адреса.</li>
-            </ul>
-
-            <h2>Полная автономность (Zero External Calls):</h2>
-            <p>В расширении отсутствуют внешние вызовы к Google Fonts, FontAwesome CDN или любым другим сторонним сервисам. Все ресурсы (шрифты, иконки, скрипты) вшиты в пакет расширения.</p>
-
-            <h2>Чего мы НЕ делаем:</h2>
-            <ul>
-                <li>Мы НЕ отправляем данные на сторонние серверы.</li>
-                <li>Мы НЕ отслеживаем и не храним историю посещений.</li>
-                <li>Мы НЕ собираем логи активности.</li>
-                <li>Мы НЕ используем данные для рекламы или продажи третьим лицам.</li>
-            </ul>
-        </section>
-
-        <hr>
 
         <section>
             <h1>Privacy Policy (BroProxy)</h1>
@@ -67,23 +40,72 @@
 
             <h2>What is used and why:</h2>
             <ul>
-                <li><code>chrome.storage.local</code> – used exclusively to store your proxy lists and settings locally on your device. Data is never synced or sent outside your browser.</li>
-                <li><code>proxy API</code> – used to configure traffic routing rules through the proxy servers you provide.</li>
-                <li><code>webRequest / webRequestAuthProvider</code> – used solely for background authentication (passing credentials to the proxy server).</li>
-                <li><code>api.ipify.org</code> – used only when the popup is open to display your current IP address.</li>
+                <li>
+                    <code>chrome.storage.local</code> – used exclusively to store proxy lists and user settings locally on your device.
+                    This data is not synchronized and never leaves your browser.
+                </li>
+                <li>
+                    <code>proxy API</code> – used to configure browser traffic routing through proxy servers specified by the user.
+                </li>
+                <li>
+                    <code>api.ipify.org</code> – used only when the extension popup is opened to display the user’s current IP address.
+                </li>
             </ul>
 
             <h2>Full Autonomy (Zero External Calls):</h2>
-            <p>The extension does not make external calls to Google Fonts, FontAwesome CDN, or any other third-party services. All assets are bundled within the extension package.</p>
+            <p>
+                Except for the optional IP address check, the extension does not make external network requests.
+                All required assets (fonts, icons, scripts) are bundled within the extension package.
+            </p>
 
             <h2>What we do NOT do:</h2>
             <ul>
-                <li>We do NOT send any data to our own or third-party servers.</li>
-                <li>We do NOT track or store your browsing history.</li>
-                <li>We do NOT collect activity logs.</li>
-                <li>We do NOT use any data for advertising, marketing, or sales.</li>
+                <li>We do NOT collect or process authentication credentials.</li>
+                <li>We do NOT intercept or analyze browsing traffic.</li>
+                <li>We do NOT track user activity or browsing history.</li>
+                <li>We do NOT send data to our own or third-party servers.</li>
+                <li>We do NOT use any data for advertising, marketing, or resale.</li>
             </ul>
         </section>
+
+        <hr>
+
+        <section>
+            <h1>Политика конфиденциальности (BroProxy)</h1>
+            <p class="date">Последнее обновление: 08.02.2026</p>
+            
+            <p>Мы НЕ собираем, не храним и не передаём персональные данные пользователей. Расширение работает полностью автономно.</p>
+
+            <h2>Что используется и зачем:</h2>
+            <ul>
+                <li>
+                    <code>chrome.storage.local</code> — используется исключительно для локального хранения списков прокси и пользовательских настроек
+                    на вашем устройстве. Данные не синхронизируются и не покидают браузер.
+                </li>
+                <li>
+                    <code>proxy API</code> — используется для настройки маршрутизации браузерного трафика через указанные пользователем прокси-серверы.
+                </li>
+                <li>
+                    <code>api.ipify.org</code> — используется только при открытии окна расширения для отображения текущего IP-адреса.
+                </li>
+            </ul>
+
+            <h2>Полная автономность (Zero External Calls):</h2>
+            <p>
+                За исключением необязательной проверки IP-адреса, расширение не выполняет внешних сетевых запросов.
+                Все ресурсы (шрифты, иконки, скрипты) включены в состав расширения.
+            </p>
+
+            <h2>Чего мы НЕ делаем:</h2>
+            <ul>
+                <li>Мы НЕ обрабатываем и не храним логины или пароли.</li>
+                <li>Мы НЕ перехватываем и не анализируем сетевой трафик.</li>
+                <li>Мы НЕ отслеживаем действия пользователя и историю посещений.</li>
+                <li>Мы НЕ отправляем данные на сторонние серверы.</li>
+                <li>Мы НЕ используем данные в рекламных или маркетинговых целях.</li>
+            </ul>
+        </section>
+
     </div>
 </body>
 </html>
